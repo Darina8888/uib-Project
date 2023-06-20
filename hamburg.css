@@ -1,3 +1,141 @@
-body {
-    background-image: ;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+   @font-face {
+      font-family: "Mr De Haviland Regular";
+      src: url(fonts/Mr\ De\ Haviland\ Regular.ttf);
+    }
+
+    @font-face {
+      font-family: "Domine_Medium";
+      src: url(fonts/Domine\ Medium.ttf);
+    }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px repeat(4, 1fr) 200px;
+    height: 30vh;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+
+  .item-one {
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+    grid-row: 1/1;
+    background-image: url(images/hamburg/hamburg-1.jpg);
+    background-position: center;
+    border-radius: 10px;
+    border: 5px #ccc solid;
+    box-shadow: 0 0 10px #444;
+  }
+
+  .item-two {
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    grid-row: 1/1;
+    background-image: url(images/hamburg/hamburg-2.jpeg);
+    background-position: center;
+    border-radius: 10px;
+    border: 5px #ccc solid;
+    box-shadow: 0 0 10px #444;
+  }
+
+  .item-three {
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 3/4;
+    grid-row: 1/1;
+    background-image: url(images/hamburg/hamburg-3.jpg);
+    background-position: center;
+    border-radius: 10px;
+    border: 5px #ccc solid;
+    box-shadow: 0 0 10px #444;
+  }
+
+  .item-four {
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 4/5;
+    grid-row: 1/1;
+    background-image: url(images/hamburg/hamburg-4.jpeg);
+    background-position: center;
+    border-radius: 10px;
+    border: 5px #ccc solid;
+    box-shadow: 0 0 10px #444;
+  }
+
+  .hamburg-main-text {
+    text-align: center;
+    font-family: "Mr De Haviland Regular";
+    font-size: 60px;
+    color: rgb(12,29,54);
+    padding: 10px;
+  }
+
+  .box {
+    margin: 10px;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+
+  /* Ab 481px für Tablets, Smartphones */
+@media (min-width: 481px) and (max-width: 720px) {
+  .box {
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  /* für Laptops und große Tablets */
+@media (min-width: 721px) {
+  .box {
+    width: 300px;
+    display: inline-block;
+    background-color: rgb(245, 228, 205);
+  }
 }
+
+/* für große Laptops, Desktop */
+@media (min-width: 1280px) {
+  .box {
+    background-color: rgb(231, 231, 193);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    
+  }
+}
+}
+
+.box-text-hamburg {
+  text-align: center;
+  line-height: 2rem;
+  font-family: "Domine_Medium";
+  font-size: 1rem;
+  color: rgb(12,29,54);
+}
+
+.box-text-hamburg-left {
+  text-align: left;
+  line-height: 2rem;
+  font-family: "Domine_Medium";
+  font-size: 1rem;
+  color: rgb(12,29,54);
+}
+  
+
+  
+
+
+  
+
+  
